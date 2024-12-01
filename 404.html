@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Maximum Verbosity</title>
+    <link rel="stylesheet" href="/assets/css/styles.css?v=1">
+    <script src="/assets/js/MV.js"></script>
+
+    <meta name="description" content="Maximum Verbosity">
+    <meta name="author" content="gnustoboz">
+    
+    <meta property="og:title" content="Maximum Verbosity">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://maximumverbosity.net/">
+    <meta property="og:description" content="Maximum Verbosity">
+    <meta property="og:image" content="/assets/images/MVIcon-512.png">
+  
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+</head>
+
+<!doctype html>
+<html>
+
+<head>
+    <title>Not Found</title>
+    <meta http-equiv="refresh" content="1; url='/#notFound'" />
+    <script type="text/javascript">
+        let go = (destination) => window.location.href = destination;
+
+        let path = window.location.href.toLowerCase();
+        let destinationMap = {
+            '/#games': ['1gam', 'game'],
+            '/#twine': ['twine', 'entweedle', 'twee', 'illume'],
+            '/#contact': ['contact', 'email'],
+            '/#notFound': ['']
+        };
+
+        function reroute() {
+            for (destination in destinationMap)
+                for (i in destinationMap[destination]) 
+                    if (path.includes(destinationMap[destination][i]))
+                        return go(destination);                
+        }
+
+        reroute();
+    </script>
+</head>
+
+</html>
+
+</html>

@@ -1,0 +1,163 @@
+<div class="contentHeadline">Twine Stuff</div>
+<div class="contentBody">
+<style type="text/css">
+    .twineProjectBlock {
+        clear: both;
+        margin: 20px 0px 40px 0px;
+    }
+
+    .twineProjectBlock>* {
+        flex-grow: 1;
+    }
+
+    .twineProjectBlock .infoBlock {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        min-width: 200px;
+    }
+
+    .twineProjectBlock .header {
+        display: inline-block;
+        min-width: 300px;
+        font-size: 1.2em;
+        border-bottom: 1px solid #999;
+    }
+
+    .twineProjectBlock .sidebar {
+        float: left;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        gap: 10px;
+        padding-right: 20px;
+        margin: 0px 5px 20px 0px;
+    }
+
+    .twineProjectBlock .icon {
+        width: 125px;
+        height: auto;
+        border: 1px solid #999;
+        display: inline-block;
+        text-align: center;
+        padding: 10px;
+        border: 1px solid #666;
+        border-radius: 5px;
+        box-shadow: 2px 2px 3px 0px #ccc;
+    }
+
+    .twineProjectBlock .sidebar a {
+        display: block;
+        width: 90%;
+        border: 1px solid #666;
+        background: #eee;
+        padding: 5px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 0.9em;
+    }
+</style>
+<div class="copy">
+    Once upon a time, I did some <a href="https://twinery.org/">Twine</a> work that was useful to people, or was interesting to me,
+    and in rare cases, maybe even both.
+</div>
+<div class="twineProjectBlock">
+    <div class="header">
+        Entweedle
+    </div>
+    <div class="sidebar">
+        <img class="icon" src="assets/images/entweedleIcon.png">
+        <a href="/twine/Entweedle/format.js">Story Format</a>
+        <a href="/twine/Entweedle/Entweedle.zip">Source Assets</a>
+    </div>
+    <div class="infoBlock">
+        <div class="description">
+            <div class="copy">
+                Those of us who used Twine 1.x and exported stories in Twee format as part of a larger
+                workflow were disappointed to find that Twine 2.0 no longer had that feature. I created Entweedle as a
+                <a href="https://onegameamonth.com/">One Game a Month</a> project for my own use and for anyone else who
+                needed it. Playing a story with Entweedle set as its story format will display Twee format source code
+                for your story.
+            </div>
+            <div class="copy">
+                However, this capability was eventually added to Twine 2.x, so this story format is probably obsolete.
+                It's maintained here in case there's any other use for it.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="twineProjectBlock">
+    <div class="header">
+        Illume
+    </div>
+    <div class="sidebar">
+        <img class="icon" src="assets/images/illumeIcon.png">
+        <a href="/twine/Illume/format.js">Story Format</a>
+        <a href="/twine/Illume/Illume.zip">Source Assets</a>
+    </div>
+    <div class="infoBlock">
+        <div class="description">
+            <div class="copy">
+                More of an experiment, Illume is a proofing story format for collaborators. It generates a file which
+                can be saved and passed off to a reviewer or proofreader.
+                <span class="interactor" onclick="MV.showLightbox('/assets/images/illumeEditView.png'); return false;">This "Illumation" of the story</span>
+                keeps track of which passages have been reviewed, and allows the reader to make changes to any passage.
+                When finished, the reader can export 
+                <span class="interactor" onclick="MV.showLightbox('/assets/images/illumeChangeList.png'); return false;">a document that details all of proposed changes</span>,
+                which the author in turn can go through like a checklist to revise their story.
+            </div>
+            <div class="copy">
+                While this generally works as intended, the process is still inconvenient due to the limitations of
+                being a story format, since there's no direct way of incorporating the changes back into the original
+                story. Anything more graceful, however, would probably require a version of Twine with shared,
+                server-stored stories and multiple users, which is obviously a very large and fundamental change to how
+                Twine works, so I wouldn't hold my breath waiting for that.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="twineProjectBlock">
+    <div class="header">
+        A Penitent Man
+    </div>
+    <div class="sidebar">
+        <img class="icon" src="assets/images/penitentIcon.png">
+        <a target="_new" href="/twine/Penitent/">Launch Story</a>
+    </div>
+    <div class="infoBlock">
+        <div class="description">
+            <div class="copy">
+                While participating in two creative challenges, <a href="https://www.nanowrimo.org/">NaNoWriMo</a> and 
+                <a href="https://onegameamonth.com/">One Game a Month</a>, I had the ill-advised notion that I would combine
+                the two challenges by, in the span of one month, writing a new story of at least 50,000 words for NaNoWriMo
+                that was playable as an interactive fiction story for 1GAM. The result is "A Penitent Man," an interactive
+                interview between a medium and a dead man.
+            </div>
+            <div class="copy">
+                In light of the time constraints, the story received essentially no proofreading, no editing, and no corrections.
+                At the time I jokingly described this story as "naked pictures of my brain on the internet" and that still feels
+                accurate. I don't dare break the seal now, so these decade-old typos and clumsy phrasings will just have to do.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="twineProjectBlock">
+    <div class="header">
+        Night Crossing
+    </div>
+    <div class="sidebar">
+        <img class="icon" src="assets/images/nightCrossingIcon.png">
+        <a target="_new" href="/twine/NightCrossing/">Launch Story</a>
+    </div>
+    <div class="infoBlock">
+        <div class="description">
+            <div class="copy">
+                In the midst of my gamejamming era, I came across a jam on the then-official Twine forums where the goal was to create a Twine story in 10 days having less than 1,000 total words. This time I experimented with embedding a Twine story in an existing web page. I figured the least Twine-like thing I could do is incorporate some sort of active elements, so I put together a page with a layered scrolling view out a window and some background sound, embedded the story format code, and plugged the updated Twine story elements into the page whenever I exported it.
+            </div>
+            <div class="copy">
+                The combination of an existing page and a Twine export worked as intended, so that was a win. The story itself has a looping structure to make the most of its limited permitted word count, and while it's a little barebones, I think it at least managed to achieve a certain vibe.
+            </div>
+        </div>
+    </div>
+</div>
+</div>
